@@ -3,13 +3,13 @@ public class Book {
     private String title;
     private String author;
     private int numberOfPages;
-    //private Genre genre;
+    private Genre genre;
 
-    public Book(String title, String author, int numberOfPages){
+    public Book(String title, String author, int numberOfPages, Genre genre){
         this.title = title;
         this.author = author;
         this.numberOfPages = numberOfPages;
-        //this.genre = genre;
+        this.genre = genre;
     }
 
     public String getTitle(){
@@ -30,5 +30,7 @@ public class Book {
     public void setNumberOfPages(int numberOfPages){
         this.numberOfPages = numberOfPages;
     }
+    public Genre getGenre() { return genre;}
+    public void setGenre(Genre genre) {this.genre = genre;}
 }
 
