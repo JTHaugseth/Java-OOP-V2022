@@ -9,7 +9,9 @@ public class Main {
 
         System.out.println(hei.getGenre());
         hei.getAuthor();
-        hei.printstate();
+        hei.printState();
+
+        hei.setNumberOfPages(720);
     }
 
 }

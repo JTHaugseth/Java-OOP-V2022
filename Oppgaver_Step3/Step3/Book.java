@@ -33,8 +33,10 @@ public class Book {
     public Genre getGenre() { return genre;}
     public void setGenre(Genre genre) {this.genre = genre;}
 
-    public void printstate(){
+    public void printState(){
         System.out.println("Title:"+ title +", Author:" +author +", Number of pages:" +numberOfPages + ", Genre:" + genre);
     }
 }
+
+
 
