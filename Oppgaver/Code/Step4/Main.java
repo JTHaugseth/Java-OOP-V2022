@@ -1,3 +1,5 @@
+package Step4;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -5,6 +7,9 @@ public class Main {
         Program program = new Program();
 
         program.menu();
+        //program.numbers();
+        //program.task4();
+        //program.runProgram();
 
     }
 }

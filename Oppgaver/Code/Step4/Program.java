@@ -1,12 +1,14 @@
+package Step4;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Program {
 
     public void runProgram() {
-        System.out.println("Program starting");
+        System.out.println("Step4.Program starting");
     }
-    public void oppgave4() {
+    public void task4() {
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> list = new ArrayList<>();
         System.out.println("Enter three words");
