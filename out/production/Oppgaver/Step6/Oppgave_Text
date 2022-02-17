@@ -63,6 +63,7 @@ Lag en metode oppgave8 i klassen Program. I metoden (oppgave8): Les data fra opg
 gjorde i forrige oppgave. Etter at dataene er lest inn, så endrer du verdier på noen av artistene. Skriv
 deretter alle de oppdaterte dataene (alle artistene) til filen opg8.txt.
 Åpne filen for å kontrollere at endringene ble utført.
+
 Trenger du noen hint? Hvit tekst på hvit bakgrunn nedenfor:
 Etter å ha lest artistene fra fil; hent ut noen objekter som du ønsker å endre. Hvis du har objektene
 dine i en ArrayList, så vet du at ArrayList tilbyr metoder for å hente ut objekter fra den.
@@ -70,6 +71,8 @@ Når du har et objekt, så kan du endre verdier i objektet via setter-metoder.
 Når du har endret noen objekter, så kan du gå igjennom alle objektene og skrive til fil. Da er det lurt å
 benytte samme format som allerede benyttes i opg7.txt. Da kan du lese inn dataene på nytt ved å
 benytte koden du skrev i oppgave 7. Husk at du kan legge til linjeskift med strengen "\n".
+
+
 Ekstraoppgave
 Legg inn et ekstra field id for Artist. Lag en kopi av filen opg7.txt og gi kopien navnet ekstra.txt. Legg
 til en unik id for hver artist i ekstra.txt. Lag et program som i oppstarten leser inn artist-dataene

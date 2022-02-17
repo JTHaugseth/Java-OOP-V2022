@@ -60,7 +60,36 @@ public class Program {
         input.close();
     }
 
-    public void step8() {
+    public void step8() throws FileNotFoundException {
+    ArrayList<Artist> artists = new ArrayList<>();
+    ArrayList<String> newArtistNames = new ArrayList<>();
+    for (int i = 0; i < 7; i++) {
+        newArtistNames.add("Classified");
+    }
+    File file = new File("Oppgaver/Code/Step6/opg7.txt");
+    readArtists(artists, file);
+    for(int i = 0; i < artists.size(); i++){
+        artists.get(i).setArtistName(newArtistNames.get(i));
+    }
 
+
+    writeArtistsToFile(artists,"Oppgaver/Code/Step6/opg8.txt" );
+    }
+    public void writeArtistsToFile (ArrayList<Artist> artists, String filename) {
+    try {
+        FileWriter writer = new FileWriter(filename);
+        for(Artist a: artists){
+            writer.write(a.getArtistName() + "\n");
+            writer.write(a.getDateOfBirth() + "\n");
+            writer.write(a.getCity() + "\n");
+            writer.write(a.getCountry() + "\n");
+            writer.write("---\n");
+
+        }
+        writer.close();
+    }catch (Exception e){
+        System.out.println("Fant ikke filen, eller noe annet som jeg ikke forstår");
+        e.printStackTrace();
+    }
     }
 }

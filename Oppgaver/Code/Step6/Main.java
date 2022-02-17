@@ -21,10 +21,17 @@ public class Main {
         } catch (IOException e) {
             System.out.println("Du skrev noe ugyldig!");
             e.printStackTrace();
-        }*/
+        }
 
         try {
             program.step7();
+        } catch (FileNotFoundException e) {
+            System.out.println("Finner ikke filen!");
+            e.printStackTrace();
+        }*/
+
+        try {
+            program.step8();
         } catch (FileNotFoundException e) {
             System.out.println("Finner ikke filen!");
             e.printStackTrace();
