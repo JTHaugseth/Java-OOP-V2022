@@ -73,7 +73,7 @@ public class Program {
     }
 
 
-    writeArtistsToFile(artists,"Oppgaver/Code/Step6/opg8.txt" );
+    writeArtistsToFile(artists, "Oppgaver/Code/Step6/opg8.txt" );
     }
     public void writeArtistsToFile (ArrayList<Artist> artists, String filename) {
     try {
