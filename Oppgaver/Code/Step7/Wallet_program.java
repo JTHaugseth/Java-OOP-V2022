@@ -66,6 +66,7 @@ public class Wallet_program {
                     case 3:
                     default:
                         System.out.println("Du kan kun trykke 1,2 eller 3");
+
             }
         }
     }
