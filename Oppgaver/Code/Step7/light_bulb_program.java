@@ -45,6 +45,9 @@ public class light_bulb_program {
                 case 4:
                     repeater = false;
                     System.out.println("Avslutter kontrollpanel");
+                    break;
+                default:
+                    System.out.println("Du kan kun skrive 1,2,3 eller 4 i kontrollpanel");
             }
         }
 
