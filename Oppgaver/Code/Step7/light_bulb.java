@@ -2,9 +2,17 @@ package Step7;
 
 public class light_bulb {
 
-    String color;
-    boolean isOn;
-    double price;
-    int lifeYears;
+    boolean state = false;
 
+    void turnOn() {
+        this.state = true;
+    }
+    void turnOff() {
+        this.state = false;
+    }
+    boolean stateCheck() {
+        return state;
+    }
 }
+
+
