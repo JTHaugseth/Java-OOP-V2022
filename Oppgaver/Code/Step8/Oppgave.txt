@@ -1,0 +1,52 @@
+Trinn 8 – Abstrakte klasser og HashMap
+I forrige uke lærte vi om arv. I denne uken skal vi fortsette i samme gate – denne gangen med
+abstrakte klasser. Og det er vel på tide å se på andre alternativer når det gjelder å holde i mange
+objekter? HashMap!
+Også denne gangen har jeg laget en lengre intro-video, så se gjerne den før du begynner.
+Mål for dette trinnet:
+- Jeg kan benytte abstrakte klasser, og jeg skjønner hva det innebærer.
+- Jeg skjønner hva aggregation (og composition) innebærer.
+- Jeg vet hvordan jeg kan benytte en HashMap.
+Det er ikke relevante kapitler i pensumboka denne gangen.
+Her er spørreskjemaet for trinn 8 der du kan fortelle hvordan det gikk.
+
+Oppgave 1
+Ta utgangpunkt i løsningen fra forrige trinn. Du kan selv velge om du vil jobbe videre med din egen
+kode eller løsningsforslaget (i Canvas).
+La oss tenke oss at koden vi har skrevet til nå skal benyttes til å tegne ulike geometriske figurer
+(shapes). Vi bryr oss ikke om selve tegningen, men vi trenger objekter som representerer ulike
+figurer. Disse forekommer i ulike former (rektangler, kvadrater og sirkler). Det virker lite
+hensiktsmessig å opprette objekter av typen Shape, gjør det vel? Da vet vi jo ikke hva slags
+geometrisk figur det er snakk om.
+Sørg for at vi ikke kan opprette objekter av type Shape.
+
+Oppgave 2
+Vi ønsker samtidig å sikre oss at alle ulike subklasser av Shape (nåværende og fremtidige) tilbyr
+metoder som gir svar på hvilket areal og hvilken omkrets figuren har. Gjør derfor nødvendige
+endringer for å sørge for dette.
+
+Oppgave 3
+Sørg for at alle figurer har en id (datatype int) som ikke kan endres. Lag en getter for id.
+
+Oppgave 4
+Opprett 10 objekter av forskjellige geometriske figurer. Putt disse i en HashMap.
+
+Oppgave 5
+Gå igjennom alle objektene i HashMapen og skriv ut informasjon om hvert objekt.
+
+Oppgave 6
+Plukk ut et objekt fra HashMapen basert på en nøkkel du vet eksisterer. Sjekk at du fikk forventet
+objekt ved å skrive ut informasjon om objektet.
+
+Ekstraoppgave 1
+Vi har flere måter å gå igjennom elementene i en HashMap på. Ta en titt på denne, og test de tre
+måtene som beskrives der. Se om IntelliJ gir deg mulige anbefalinger for endringer i syntaks og prøv
+ut disse.
+
+Ekstraoppgave 2
+Skrive ut informasjon om alle figurer som har et areal som er større enn en viss grense.
+
+Ekstraoppgave 3
+Lag en metode som returnerer alle objekter som har omkrets over en viss størrelse. Her må nok drive
+litt research for å få det til på en elegant måte. Du kan for eksempel forsøke å bruke stream, som vi
+ikke kommer til å komme inn på i dette emnet. Men morsomt å lære seg uansett
