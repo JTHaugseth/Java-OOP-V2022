@@ -16,7 +16,15 @@ public class Circle extends Shape {
     public void setRadius(double radius) {this.radius = radius;}
 
     @Override
-    public double getradius() {
-        return 0;
+    public double getAreal() {
+        return getRadius() * getRadius() * Math.PI;
+    }
+    @Override
+    public double getCircumference() {
+        return Math.PI * (getRadius() * 2);
+    }
+    @Override
+    public String toString() {
+        return String.format("Circle %s with radius = %s, which is a subclass of %s",getId(), radius, super.toString());
     }
 }
