@@ -25,10 +25,13 @@ public abstract class Shape {
 
     public int getId() {return id;}
 
-    public String ToString(){
+    public abstract double getradius();
+
+
+    public String toString(){
         if (this.isFilled()){
-            return String.format("A shape with color of %s, id=%s and filled", color.toString(), id);
+            return String.format("A shape with color of %s, id=%d and filled", color.toString(), id);
         }
-        return String.format("A shape with color of %s, id=%s and not filled" , color.toString(), id);
+        return String.format("A shape with color of %s, id=%d and not filled" , color.toString(), id);
     }
 }
