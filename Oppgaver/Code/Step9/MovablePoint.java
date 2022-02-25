@@ -31,10 +31,6 @@ public class MovablePoint implements Movable {
 
     @Override
     public String toString() {
-        return "MovablePoint{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
-        //mulig vi vil endre dette senere.
+        return String.format("MovablePoint { x= %f, y = %f }", this.x, this.y);
     }
 }

@@ -25,7 +25,8 @@ public abstract class Shape {
 
     public int getId() {return id;}
 
-    public abstract double getradius();
+    public abstract double getAreal();
+    public abstract double getCircumference();
 
 
     public String toString(){
