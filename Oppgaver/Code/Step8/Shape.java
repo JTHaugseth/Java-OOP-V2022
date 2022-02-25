@@ -32,6 +32,6 @@ public abstract class Shape {
         if (this.isFilled()){
             return String.format("A shape with color of %s, id=%d and filled", color.toString(), id);
         }
-        return String.format("A shape with color of %s, id=%d and not filled" , color.toString(), id);
+        return String.format("A shape with color of %s, id=%d and not filled" , super.toString());
     }
 }
