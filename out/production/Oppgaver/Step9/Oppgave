@@ -97,9 +97,9 @@ Tenk litt på den, og få hvit-tekst-hjelp nedenfor om nødvendig.
 Alle er jo Shapes! Opprett derfor ArrayListen til å holde i objekter av typen Shape.
 Gå igjennom alle elementene i ArrayListen og flytt elementene i en eller annen retning. Gå igjennom
 elementene på nytt og sjekk om ny posisjon samsvarer med forventingene.
+
+
 Oppgave 8
-
-
 Lag en unik metode for hver type (Circle, Rectangle og Square) – altså en metode som bare finnes i
 de enkelte klassene. Eksempel for Circle:
 public void uniqueCircleMethod(){<SOUT noe>}.

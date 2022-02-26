@@ -36,6 +36,6 @@ public class Circle extends Shape{
     public double getCircumference() {return Math.PI * (radius * 2);}
 
     public String toString(){
-        return String.format("A circle with center = %s and radius %1.0f", this.center, this.radius);
+        return String.format("A circle with center = %s and radius %1.0f\n", this.center, this.radius);
     }
 }
