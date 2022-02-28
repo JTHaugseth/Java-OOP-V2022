@@ -1,4 +1,4 @@
-package Access_Modifiers;
+package Encapsulation;
 
 public class Main {
 
