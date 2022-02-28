@@ -56,4 +56,8 @@ public class Rectangle extends Shape{
         return String.format("A Rectangle with topRight position = %s, bottomLeft position = %s, width = %1.1f and height = %1.1f\n"
                 , this.topRight, this.bottomLeft, this.width, this.height);
     }
+
+    public String uniqueRectangleMethod() {
+        return String.format("This is a unique rectangle method!");
+    }
 }

@@ -38,4 +38,8 @@ public class Circle extends Shape{
     public String toString(){
         return String.format("A circle with center = %s and radius %1.0f\n", this.center, this.radius);
     }
+
+    public String uniqueCircleMethod() {
+        return String.format("This is a unique circle method!");
+    }
 }
