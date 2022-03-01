@@ -13,9 +13,9 @@ and Constructor(s). We can add an exception handler which ensures that the volum
 larger than zero, otherwise a CoffeeException will be thrown.
 Create a CoffeeConfiguration class, and it has two attributes: quantityCoffee, and quantityWater.
 Make Getters/Setters and A Constructor.
-
-
 Create CoffeeException Class, and implement several Constructors.
+
+
 Task 2: Create the AbstractCoffeeMaker Class. Make it abstract.
 It has one attribute called HashMap<CoffeeType, CoffeeConfiguration > configMap. You will need to
 get CoffeeConfiguration based on CoffeeType before making a coffee. However, in this abstract class,
