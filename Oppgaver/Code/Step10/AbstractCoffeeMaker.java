@@ -4,8 +4,13 @@ import java.util.HashMap;
 
 public abstract class  AbstractCoffeeMaker {
 
-    HashMap<CoffeeType, CoffeeConfiguration> configMap;
+    protected HashMap<CoffeeType, CoffeeConfiguration> configMap;
 
-    abstract void brewCoffee(CoffeeType coffeeType);
+    public AbstractCoffeeMaker() {
+        this.configMap = new HashMap<CoffeeType, CoffeeConfiguration>();
+    }
+
+    public abstract Coffee brewCoffee(CoffeeType coffeeType) throws CoffeeException;
+
 
 }
