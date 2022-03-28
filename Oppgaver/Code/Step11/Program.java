@@ -1,7 +1,9 @@
 package Step11;
 
+import javax.swing.text.html.Option;
 import java.util.HashSet;
 import java.util.Optional;
+import java.util.Set;
 
 public class Program {
 
@@ -9,7 +11,6 @@ public class Program {
 
     void runProgram() {
         HashSet();
-        getSamplePerson("Vegard");
     }
 
     private void HashSet(){
@@ -17,15 +18,38 @@ public class Program {
         people.add(new Person(24, "Julian"));
         System.out.println(people);
     }
-    public HashSet<Person> getSamplePerson(String name) {
+    public Optional<Person> getSamplePerson(String name) {
         for (Person i : people) {
-            if (people.contains(name)) {
-                System.out.println("Navnet eksisterer");
+            if (i.getName().equalsIgnoreCase(name)) {
+                return Optional.of(i);
             }
-
         }
+        return Optional.empty();
+    }
 
-        return null;
+    public void addPerson (Person p){
+        validate(p);
+        people.add(p);
+    }
+    public void validate(Person p) {
+        if (p.getName() == null) {
+            throw new IllegalArgumentException("Name must be valid");
+        }
+        if (p.getAge() < 0) {
+            throw new IllegalArgumentException("Age must be over 0");
+        }
+        if (p == null) {
+            throw new IllegalArgumentException("Null input when Person excepted");
+        }
+    }
+    public Set<Person> getPersonByAge(int age) {
+        Set<Person> personToReturn = new HashSet<>();
+        for (Person p : people){
+            if (p.getAge() > age) {
+                personToReturn.add(p);
+            }
+        }
+        return personToReturn;
     }
 
 }
