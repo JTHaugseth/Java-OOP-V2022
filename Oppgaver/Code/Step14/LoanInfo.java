@@ -8,10 +8,9 @@ public class LoanInfo {
     int loanId;
     Customer customer;
 
-    public LoanInfo(double loanAmount, String startDate, int loanId, Customer customer) {
+    public LoanInfo(double loanAmount, String startDate, Customer customer) {
         this.loanAmount = loanAmount;
         this.startDate = startDate;
-        this.loanId = loanId;
         this.customer = customer;
     }
 
