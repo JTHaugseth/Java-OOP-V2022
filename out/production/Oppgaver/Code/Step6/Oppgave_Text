@@ -1,0 +1,88 @@
+Trinn 6 – Lese og skrive fra/til fil, unntakshåndtering
+I forrige trinn lærte vi hvordan vi kunne få input fra bruker via console. Nå skal vi se at vi også kan
+benytte Scanner til å lese fra fil. Vi skal også skrive til fil med FileWriter. Og vi må også lære oss litt
+unntakshåndtering. Vi har sett bort fra det til nå, men nå er det virkelig på tide!
+Også denne gangen har jeg laget en lengre intro-video, så se gjerne den før du begynner.
+Mål for dette trinnet:
+- Jeg kan benytte Scanner til å lese fra fil.
+- Jeg kan benytte FileWriter til å skrive til fil.
+- Jeg skjønner overordnet hvordan unntakshåndtering fungerer i Java.
+- Jeg skjønner hvordan jeg kan fange og kaste unntak.
+- Jeg kan benytte en egnet klasse for å håndtere en dato.
+Denne gangen er det ingen relevante kapitler i pensumboka…
+Her er spørreskjemaet for trinn 6 der du kan fortelle hvordan det gikk.
+I Canvas finner du noen filer du trenger for denne uken. Hent zippen i Canvas og pakk ut.
+Introvideoen forklarer hvor du bør legge filene. Som du vil se nedenfor er de første oppgavene en litt
+annerledes introduksjon enn sist.
+
+Oppgave 1
+Opprett et nytt prosjekt. Legg til en klasse som har en main-metode.
+
+Oppgave 2
+Opprett en klasse «Program». Det er i denne klassen de ulike oppgavene (4, 5, 7 og 8) skal utføres.
+
+Oppgave 3
+I main-metoden din; opprett et objekt av klassen Program. Du sjekker om metodene du lager (for
+oppgave 4, 5, 7 og 8) fungerer tilfredsstillende ved å kalle på metoden (for eksempel oppgave4) fra
+main-metoden.
+Da er du ferdig med forberedelsene
+
+Oppgave 4
+Lag en metode oppgave4 i klassen Program. I metoden: les innholdet i filen opg4.txt og skriv det ut
+(SOUT), linje for linje.
+
+Oppgave 5
+Lag en metode oppgave5 i klassen Program. I metoden: Ta imot 5 strenger fra bruker (som du lærte i
+trinn 5). Skriv de 5 strengene til en fil du kaller opg6.txt. Åpne filen og sjekk om resultatet ble som
+forventet.
+Tips: Hvis du ønsker å legge inn linjeskift i filen, så kan du gjøre det ved å legge inn strengen "\n".
+
+Oppgave 6
+Opprett en klasse «Artist» som har fields: artistName, dateOfBirth (datatype: LocalDate), city,
+country. Lag en konstruktører for klassen som tar imot verdier for alle fieldsene.
+Konstruktøren skal sette verdiene til fieldsene.
+Lag gettere og settere for fieldsene. Leg også inn en metode som skriver ut (SOUT) informasjon om
+objektet (verdi for alle fields).
+
+Oppgave 7
+Lag en metode oppgave7 i klassen Program. Filen opg7.txt inneholder data om artister på et spesifikt
+format. Se på innholdet i filen, så ser du hva jeg mener. I metoden (oppgave7): Les inn innholdet i
+filen og opprett Artist-objekter som samsvarer med dataene. Ta vare på objektene i egnet struktur.
+For å sjekke om lesingen fra fil fungerte, gå igjennom alle objektene og kall på metoden som printer
+ut objektets tilstand.
+Trenger du noen hint? Les den hvite teksten på hvit bakgrunn nedenfor:
+
+Du må gå i en løkke når du leser inn dataene fra filen. Når det gjelder fødselsdag, så må denne gjøres
+om til et dato-objekt (LocalDate). Dette er forklart i introvideoen.
+Du må lese data fra filen inntil det ikke er mer data å lese. Du oppretter objektene ved å benytte
+konstruktøren du har laget i Artist. Og hvor skal vi plassere objektene? Vi har flere alternativer, men
+du kan for eksempel benytte en ArrayList, ettersom den skal være velkjent fra før.
+
+Oppgave 8
+Lag en metode oppgave8 i klassen Program. I metoden (oppgave8): Les data fra opg7.txt som du
+gjorde i forrige oppgave. Etter at dataene er lest inn, så endrer du verdier på noen av artistene. Skriv
+deretter alle de oppdaterte dataene (alle artistene) til filen opg8.txt.
+Åpne filen for å kontrollere at endringene ble utført.
+
+Trenger du noen hint? Hvit tekst på hvit bakgrunn nedenfor:
+Etter å ha lest artistene fra fil; hent ut noen objekter som du ønsker å endre. Hvis du har objektene
+dine i en ArrayList, så vet du at ArrayList tilbyr metoder for å hente ut objekter fra den.
+Når du har et objekt, så kan du endre verdier i objektet via setter-metoder.
+Når du har endret noen objekter, så kan du gå igjennom alle objektene og skrive til fil. Da er det lurt å
+benytte samme format som allerede benyttes i opg7.txt. Da kan du lese inn dataene på nytt ved å
+benytte koden du skrev i oppgave 7. Husk at du kan legge til linjeskift med strengen "\n".
+
+
+Ekstraoppgave
+Legg inn et ekstra field id for Artist. Lag en kopi av filen opg7.txt og gi kopien navnet ekstra.txt. Legg
+til en unik id for hver artist i ekstra.txt. Lag et program som i oppstarten leser inn artist-dataene
+(ekstra.txt) fra fil. Husk at du også må lese inn id. Lag en brukermeny der brukeren kan:
+- Få informasjon om alle artister.
+- Hente ut artist basert på id.
+- Legge til artist.
+- Endre artist basert på id
+- Avslutte programmet.
+Når brukeren avslutter programmet, skal dataene om artistene skrives til fil.
+Ekstra vanskelig: Når du skriver ut informasjon om en artist, ta med informasjon om hvor mange år
+artisten er, og hvor mange dager det er til artistens bursdag. Dette har vi ikke gått igjennom, så da
+må du utforske
