@@ -61,7 +61,7 @@ public class JDBCOps {
         try (Connection con = DriverManager
                 .getConnection("jdbc:mysql://localhost:3306/bookDb?allowPublicKeyRetrieval" +
                         "=true&useSSL=false", "julian", "haugseth123")) {
-            PreparedStatement stmt = con.prepareStatement("")
+            PreparedStatement stmt = con.prepareStatement("");
 
         }catch (SQLException e){
             e.printStackTrace();

@@ -1,12 +1,10 @@
-package RepetisionStep4;
+package RepetisionStep8and9;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("In the start of main()");
         Program program = new Program();
 
         program.runProgram();
-
     }
 }
