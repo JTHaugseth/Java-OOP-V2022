@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/Code/Resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/Code/Step17/Resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/Code/RepetissionStep17/Resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
