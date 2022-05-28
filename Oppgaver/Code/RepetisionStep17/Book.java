@@ -1,4 +1,4 @@
-package RepetissionStep17;
+package RepetisionStep17;
 
 public class Book {
     private String title;

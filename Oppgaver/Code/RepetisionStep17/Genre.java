@@ -1,4 +1,4 @@
-package RepetissionStep17;
+package RepetisionStep17;
 
 public enum Genre {
     CRIME("CRIME"),

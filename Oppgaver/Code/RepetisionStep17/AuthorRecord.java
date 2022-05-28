@@ -1,4 +1,4 @@
-package RepetissionStep17;
+package RepetisionStep17;
 
 public class AuthorRecord {
     private int tableId;
