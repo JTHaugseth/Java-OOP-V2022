@@ -8,7 +8,9 @@ public class Main {
 
         Program program = new Program();
         program.fileReader();
+        //program.printBallsNeedingMoreAir();
+        //program.printEquipmentNeedingToBeReplaced();
+        //program.printTableTennisRacketsNeedingNewPad();
 
-        System.out.println(program.map.get(5));
     }
 }

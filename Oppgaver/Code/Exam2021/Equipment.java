@@ -32,6 +32,7 @@ public abstract class Equipment {
     public void setNeedsReplacement(boolean needsReplacement) {this.needsReplacement = needsReplacement;}
 
 
+
     public abstract String toString();
 
 }
